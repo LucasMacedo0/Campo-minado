@@ -54,7 +54,7 @@ public class TabuleiroConsole {
 
                 digitado = capturarValorDigitado("1 - Abrir ou 2 - (Des)marcar");
 
-                if("1".equals(digitado)){
+                if ("1".equals(digitado)) {
                     tabuleiro.abrir(xy.next(), xy.next());
                 } else if ("2".equals(digitado)) {
                     tabuleiro.alternarMarcacao(xy.next(), xy.next());
@@ -73,7 +73,7 @@ public class TabuleiroConsole {
         System.out.println(texto);
         String digitado = entrada.nextLine();
 
-        if("sair".equalsIgnoreCase(digitado)){
+        if ("sair".equalsIgnoreCase(digitado)) {
             throw new ExceptionSair();
         }
         return digitado;
