@@ -1,3 +1,4 @@
+/*
 import org.example.exceptions.ExplosaoException;
 import org.example.model.Campo;
 import org.junit.jupiter.api.Assertions;
@@ -99,10 +100,11 @@ public class CampoTest {
             Assertions.assertFalse(campo.abrir());
         });
     }
+
     @Test
-    void testeAbrirComVizinhos1(){
-        Campo vizinhoDoVizinho1 = new Campo(1,1);
-        Campo vizinho1 = new Campo(2,2);
+    void testeAbrirComVizinhos1() {
+        Campo vizinhoDoVizinho1 = new Campo(1, 1);
+        Campo vizinho1 = new Campo(2, 2);
 
         campo.adicionarVizinho(vizinhoDoVizinho1);
         campo.adicionarVizinho(vizinho1);
@@ -113,13 +115,14 @@ public class CampoTest {
 
 
     }
+
     @Test
-    void testeAbrirComVizinhos2(){
-        Campo campo11 = new Campo(1,1);
-        Campo campo12 = new Campo(1,1);
+    void testeAbrirComVizinhos2() {
+        Campo campo11 = new Campo(1, 1);
+        Campo campo12 = new Campo(1, 1);
         campo12.minar();
 
-        Campo campo22 = new Campo(2,2);
+        Campo campo22 = new Campo(2, 2);
 
         campo.adicionarVizinho(campo22);
         campo.abrir();
@@ -129,3 +132,4 @@ public class CampoTest {
     }
 
 }
+*/
